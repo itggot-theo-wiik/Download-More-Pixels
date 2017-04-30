@@ -5,7 +5,7 @@
     <meta charset="utf-8" />
     <link rel="stylesheet" href="./css/main.css">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <link rel="icon" href="./img/">
+    <link rel="icon" href="./img/Apple-Logo-rainbow.png">
     <title>PixShop</title>
 
 
@@ -19,24 +19,25 @@
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script type="text/javascript" src="js/materialize.min.js"></script>
 
-    <main>
-        <div class="hero_text">
-            <h3>Download more</h3>
-            <h1>PIXELS</h1>
-        </div>
+    <div class="hero_text">
+        <h3>Download more</h3>
+        <h1>PIXELS</h1>
+    </div>
 
-        <div class="parallax-container">
-            <div class="parallax"><img src="./img/Macingtosh.jpg" alt="Parallax"></div>
-        </div>
+    <div class="parallax-container">
+        <div class="parallax"><img src="./img/Macingtosh.jpg" alt="Parallax"></div>
+    </div>
 
-        <header>
-            <!-- <form action="index.html">
+    <header>
+        <!-- <form action="index.html">
                 <input type="submit" class="windows_button" value="Menu" />
             </form> -->
 
-            <div class="windows_button_img"></div>
-            <p>Download more Pixels</p>
-        </header>
+        <div class="windows_button_img"></div>
+        <p class="type_writer">Download more Pixels</p>
+    </header>
+
+    <main>
 
         <article class="">
             <h1>The future is here.</h1>
@@ -44,36 +45,101 @@
                 enough objectives to continue to further rounds.</p>
         </article>
 
-        <div class="slide">
+        <article class="">
+            <h1>Cross Compatible</h1>
+            <p>Joe Danger is a side-scrolling video game incorporating elements of racing and platform games, and is the first game developed by Hello Games. The player controls the eponymous daredevil and navigates time-limited courses, aiming to complete
+                enough objectives to continue to further rounds.</p>
+        </article>
+        <div class="compatible">
+            <div class="apple"></div>
+            <div class="apple"></div>
+            <div class="apple"></div>
+        </div>
+
+        <div class="parallax-container top-margin blueFilter parallax_small">
+            <p class="new">New!</p>
+            <div class="parallax_text">
+                <h1>VR</h1>
+                <h2>PIXELS</h2>
+            </div>
+            <div class="parallax"><img src="./img/vr.jpg" alt="Parallax"></div>
+        </div>
+
+        <article class="">
+            <h1>Introducing VR pixels</h1>
+            <p>Joe Danger is a side-scrolling video game incorporating elements of racing and platform games, and is the first game developed by Hello Games. The player controls the eponymous daredevil and navigates time-limited courses, aiming to complete
+                enough objectives to continue to further rounds.</p>
+        </article>
+
+        <div class="slide" onclick="displayer(this.id)" id="one">
             <article class="slide_text">
-                <p>
-                    Joe Danger is a side-scrolling video game incorporating elements of racing and platform games, and is the first game developed by Hello Games. The player controls the eponymous daredevil and navigates time-limited courses, aiming to complete enough objectives
-                    to continue to further rounds.
-                </p>
+                <h1>Joe</h1>
+                <p>Click to read more</p>
             </article>
             <div class="slide_img"></div>
         </div>
 
-        <div class="payment_plan">
-            <div class="payment_plan_header">
-                <div class="payment_plan_img center">
-                    <h3>1920<br />x<br />1080</h3>
+        <div class="slide">
+            <div class="slide_img"></div>
+            <article class="slide_text">
+                <h1>Danger</h1>
+                <p>Click to read more</p>
+            </article>
+        </div>
+
+        <div class="slide">
+            <article class="slide_text">
+                <h1>Daredevil</h1>
+                <p>Click to read more</p>
+            </article>
+            <div class="slide_img"></div>
+        </div>
+
+        <!-- READ MORE -->
+        <div class="readmore windows_shadow" id="readmore_one">
+          <div class="windows_tab center_vertical">
+              <p class="type_writer">Joe</p>
+              <div class="windows_button windows_shadow" id="one" onclick="hide(this.id)">
+                  <p class="type_writer">X</p>
+              </div>
+          </div>
+            <!-- <div class="readmore_header"></div> -->
+            <article class="">
+                <h1 class="type_writer">Joe Category</h1>
+                <p class="type_writer">Joe Danger is a side-scrolling video game incorporating elements of racing and platform games, and is the first game developed by Hello Games. The player controls the eponymous daredevil and navigates time-limited courses, aiming to complete
+                    enough objectives to continue to further rounds.</p>
+            </article>
+        </div>
+        <!-- READ MORE -->
+
+        <h1 class="center">Most popular</h1>
+        <div style="background-color: #008081">
+            <div class="payment_plan windows_shadow" id="payment_plan_one">
+                <div class="windows_tab center_vertical">
+                    <p class="type_writer">3840 x 2160</p>
+                    <div class="windows_button windows_shadow" id="one" onclick="deleter(this.id)">
+                        <p class="type_writer">-</p>
+                    </div>
+                </div>
+                <div class="payment_plan_list" id="payment_plan_text_one">
+                    <ul>
+                        <li>4K</li>
+                        <li>Great viewing angles</li>
+                        <li>144hz</li>
+                        <li>1 ms response time</li>
+                    </ul>
                 </div>
             </div>
-            <div class="payment_plan_list">
-                <ul>
-                    <li>Crisp screen</li>
-                    <li>4K</li>
-                    <li>Item</li>
-                </ul>
-            </div>
-
-            <form action="index.html">
-                <input type="submit" class="button" value="19.99$" />
-            </form>
-
         </div>
     </main>
+
+    <footer>
+        <p>Joe danger</p>
+        <p>Side scrolling</p>
+        <p>
+            daredevil!
+        </p>
+    </footer>
 
 </body>
 
