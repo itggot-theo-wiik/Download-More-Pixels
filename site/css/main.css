@@ -280,6 +280,11 @@ footer {
     width: 100%;
 }
 
+/*#slide_middle {
+    border-top: rgba(0, 204, 205, 1) solid 1px;
+    border-bottom: rgba(0, 204, 205, 1) solid 1px;
+}*/
+
 .slide_text {
     /*padding-left: 16px;
     padding-right: 16px;*/
