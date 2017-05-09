@@ -129,15 +129,15 @@ article h1 {
 }
 
 .windows {
-  background-image: url(../img/Windows_95_Logo.png);
-  background-size: cover;
-  width: 89px;
+    background-image: url(../img/Windows_95_Logo.png);
+    background-size: cover;
+    width: 89px;
 }
 
 .linux {
-  background-image: url(../img/official-tux-logo.png);
-  background-size: cover;
-  width: 69px;
+    background-image: url(../img/official-tux-logo.png);
+    background-size: cover;
+    width: 69px;
 }
 
 
@@ -203,6 +203,7 @@ footer {
     margin-right: 12px;
     margin-bottom: 19px;
 }
+
 
 /*---PARALLAX---*/
 
@@ -278,7 +279,6 @@ footer {
 
 /*---SLIDE---*/
 
-
 .slide {
     min-height: 100px;
     display: flex;
@@ -297,6 +297,7 @@ footer {
     background-color: rgba(0, 204, 205, 0.5);
     width: 100%;
 }
+
 
 /*#slide_middle {
     border-top: rgba(0, 204, 205, 1) solid 1px;
@@ -333,14 +334,37 @@ footer {
 }
 
 table, td, th {
-    border: 1px solid black;
+    border: 1px solid rgba( 0, 0, 0, 0.54);
     min-width: 10px;
 }
 
 table {
     border-collapse: collapse;
     width: 80%;
+}
 
+th {
+    background-color: #c0c0c0;
+}
+
+.category {
+    color: #008081;
+}
+
+.green, .red {
+    font-size: 300px;
+}
+
+.green {
+    color: #00FF00;
+}
+
+.red {
+    color: #FF0000;
+}
+
+td {
+    height: 50px;
 }
 
 th {
