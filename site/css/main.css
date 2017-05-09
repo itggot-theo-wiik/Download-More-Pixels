@@ -9,6 +9,11 @@ body, html, p, h3, h2, h1 {
     /*font-family: "Lucida Console", Monaco, monospace;*/
 }
 
+a {
+    text-decoration: none;
+    color: black;
+}
+
 main {}
 
 
@@ -50,6 +55,12 @@ header {
     align-items: center;
     border-top: 1px rgb(247, 247, 246) solid;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+.dotted_border {
+    height: 100%;
+    width: 100%;
+    border: dotted 1px black;
 }
 
 article {
@@ -164,10 +175,11 @@ footer {
 /*---PAYMENT PLAN---*/
 
 .payment_plan {
-    height: 300px;
     width: 200px;
     background-color: #c0c0c0;
     margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
     font-family: "Courier New", Courier, monospace;
 }
 
@@ -185,6 +197,12 @@ footer {
     color: black;
 }
 
+#marginizer {
+    margin-top: 50px;
+    margin-left: 12px;
+    margin-right: 12px;
+    margin-bottom: 19px;
+}
 
 /*---PARALLAX---*/
 
@@ -194,7 +212,7 @@ footer {
     height: 200px;
 }
 
-.parallax {
+.parallax, .showcase_img {
     position: absolute;
     top: 0;
     left: 0;
@@ -312,6 +330,21 @@ footer {
     background-size: cover;
     background-color: rgb(0, 204, 205);
     background-blend-mode: multiply;
+}
+
+table, td, th {
+    border: 1px solid black;
+    min-width: 10px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 80%;
+
+}
+
+th {
+    height: 50px;
 }
 
 @media (min-width: 800px) {}

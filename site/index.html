@@ -62,7 +62,7 @@
                 <h1>VR</h1>
                 <h2>PIXELS</h2>
             </div>
-            <div class="parallax"><img src="./img/vr.jpg" alt="Parallax"></div>
+            <div class="showcase_img"><img src="./img/vr.jpg" alt="Parallax"></div>
         </div>
 
         <article class="">
@@ -71,35 +71,35 @@
                 enough objectives to continue to further rounds.</p>
         </article>
 
-            <div class="slide" onclick="displayer(this.id)" id="one">
-                <article class="slide_text">
-                    <h1>Joe</h1>
-                    <p>Click to read more</p>
-                </article>
-                <div class="slide_img">
-                    <img src="./img/pc.png" alt="tree">
-                </div>
+        <div class="slide" onclick="displayer(this.id)" id="one">
+            <article class="slide_text">
+                <h1>More Details</h1>
+                <p>Click to read more</p>
+            </article>
+            <div class="slide_img">
+                <img src="./img/pc.png" alt="tree">
             </div>
+        </div>
 
-            <div class="slide" id="slide_middle">
-                <div class="slide_img">
-                    <img src="./img/tree.png" alt="tree">
-                </div>
-                <article class="slide_text">
-                    <h1>Environmentally friendly</h1>
-                    <p>Click to read more</p>
-                </article>
+        <div class="slide" id="slide_middle">
+            <div class="slide_img">
+                <img src="./img/tree.png" alt="tree">
             </div>
+            <article class="slide_text">
+                <h1>Environmentally friendly</h1>
+                <p>Click to read more</p>
+            </article>
+        </div>
 
-            <div class="slide">
-                <article class="slide_text">
-                    <h1>Open Source</h1>
-                    <p>Click to read more</p>
-                </article>
-                <div class="slide_img">
-                    <img src="./img/folder.png" alt="tree">
-                </div>
+        <div class="slide">
+            <article class="slide_text">
+                <h1>Open Source</h1>
+                <p>Click to read more</p>
+            </article>
+            <div class="slide_img">
+                <img src="./img/folder.png" alt="tree">
             </div>
+        </div>
 
         <!-- READ MORE -->
         <div class="readmore windows_shadow" id="readmore_one">
@@ -120,6 +120,8 @@
 
         <h1 class="center">Most popular</h1>
         <div style="background-color: #008081">
+
+            <!-- paymant plan start -->
             <div class="payment_plan windows_shadow" id="payment_plan_one">
                 <div class="windows_tab center_vertical">
                     <p class="type_writer">3840 x 2160</p>
@@ -134,9 +136,109 @@
                         <li>144hz</li>
                         <li>1 ms response time</li>
                     </ul>
+
+                    <a href="index.html">
+                        <div class="windows_button windows_shadow" id="marginizer">
+                            <div class="dotted_border center_vertical">
+                                <p class="type_writer">Download</p>
+                            </div>
+                        </div>
+                    </a>
+
                 </div>
             </div>
+            <!-- paymant plan end -->
+            <!-- paymant plan start -->
+            <div class="payment_plan windows_shadow" id="payment_plan_two">
+                <div class="windows_tab center_vertical">
+                    <p class="type_writer">1920 x 1080</p>
+                    <div class="windows_button windows_shadow" id="two" onclick="deleter(this.id)">
+                        <p class="type_writer">-</p>
+                    </div>
+                </div>
+                <div class="payment_plan_list" id="payment_plan_text_two">
+                    <ul>
+                        <li>Full HD</li>
+                        <li>IPS</li>
+                        <li>120hz</li>
+                        <li>5 ms response time</li>
+                    </ul>
+
+                    <a href="index.html">
+                        <div class="windows_button windows_shadow" id="marginizer">
+                            <div class="dotted_border center_vertical">
+                                <p class="type_writer">Download</p>
+                            </div>
+                        </div>
+                    </a>
+
+                </div>
+            </div>
+            <!-- paymant plan end -->
+            <!-- paymant plan start -->
+            <div class="payment_plan windows_shadow" id="payment_plan_three">
+                <div class="windows_tab center_vertical">
+                    <p class="type_writer">1280 * 720</p>
+                    <div class="windows_button windows_shadow" id="three" onclick="deleter(this.id)">
+                        <p class="type_writer">-</p>
+                    </div>
+                </div>
+                <div class="payment_plan_list" id="payment_plan_text_three">
+                    <ul>
+                        <li>HD</li>
+                        <li>100% Performance</li>
+                        <li>60hz</li>
+                        <li>5 ms response time</li>
+                    </ul>
+
+                    <a href="index.html">
+                        <div class="windows_button windows_shadow" id="marginizer">
+                            <div class="dotted_border center_vertical">
+                                <p class="type_writer">Download</p>
+                            </div>
+                        </div>
+                    </a>
+
+                </div>
+            </div>
+            <!-- paymant plan end -->
         </div>
+
+        <div class="table_container">
+            <table>
+                <tr>
+                    <th></th>
+                    <th>Peasant</th>
+                    <th>Economy</th>
+                    <th>Premium</th>
+                </tr>
+                <tr>
+                    <td>Width</td>
+                    <td>1280px</td>
+                    <td>Griffin</td>
+                    <td>$100</td>
+                </tr>
+                <tr>
+                    <td>Height</td>
+                    <td>720px</td>
+                    <td>Griffin</td>
+                    <td>$150</td>
+                </tr>
+                <tr>
+                    <td>Hz</td>
+                    <td>Joe</td>
+                    <td>Swanson</td>
+                    <td>$300</td>
+                </tr>
+                <tr>
+                    <td>OLED</td>
+                    <td>Cleveland</td>
+                    <td>Brown</td>
+                    <td>$250</td>
+                </tr>
+            </table>
+        </div>
+
     </main>
 
     <footer>
