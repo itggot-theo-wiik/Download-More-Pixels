@@ -204,6 +204,74 @@ footer {
     margin-bottom: 19px;
 }
 
+.shutdown {
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #C3C0B9;
+}
+
+/*---START MENU---*/
+.start_menu {
+    min-height: 50px;
+    width: 159px;
+    background-color: #bfb8bf;
+    display: flex;
+    flex-direction: row;
+}
+
+.start_menu_column {
+    background-color: #7f787f;
+    width: 21px;
+    min-height: 100px;
+    color: #bfb8bf;
+}
+
+.start_menu_list {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 32px;
+}
+
+.start_menu_list:hover {
+    background-color: #00007f;
+    color: #fff8ff;
+}
+
+.start_menu_list_icon {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.separator {
+    width: 103%;
+    height: 1px;
+    background-color: #7f787f;
+    border-bottom: solid #fff8ff 1px;
+}
+
+.bottom {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.rotate {
+-webkit-transform: rotate(-90deg);
+-moz-transform: rotate(-90deg);
+-ms-transform: rotate(-90deg);
+-o-transform: rotate(-90deg);
+filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+}
+
 
 /*---PARALLAX---*/
 
