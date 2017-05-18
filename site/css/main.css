@@ -14,7 +14,9 @@ a {
     color: black;
 }
 
-main {}
+main {
+    background-color: white;
+}
 
 
 /*---SPRITESHEET---*/
