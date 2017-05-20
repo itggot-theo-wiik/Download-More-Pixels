@@ -27,39 +27,48 @@
         <div class="parallax"><img src="./img/Macingtosh.jpg" alt="Parallax"></div>
     </div>
 
-    <header>
-        <!-- <form action="index.html">
-                <input type="submit" class="windows_button" value="Menu" />
-            </form> -->
+    <div class="header_container">
+        <header>
+            <!-- <form action="index.html">
+                    <input type="submit" class="windows_button" value="Menu" />
+                </form> -->
 
-        <div class="windows_button_img"></div>
-        <p class="type_writer">Download more Pixels</p>
-    </header>
+                    
+            <div class="windows_button_img" onclick="nav()"></div>
+            <p class="type_writer">Download more Pixels</p>
+        </header>
+
+        <div class="start_menu_container">
+            <div class="start_menu windows_shadow">
+                <div class="start_menu_column bottom">
+                    <p class="rotate">RacecarOS</p>
+                </div>
+                <div class="start_menu_tabs">
+                    <div class="start_menu_list">
+                        <div class="start_menu_list_icon"><p class="type_writer"><img src="./img/shutdown.png" alt="Shutdown"></div>
+                        <div class="start_menu_list_text"><p class="type_writer">Home</p></div>
+                    </div>
+                    <div class="start_menu_list">
+                        <div class="start_menu_list_icon"><img src="./img/shutdown.png" alt="Shutdown"></div>
+                        <div class="start_menu_list_text"><p class="type_writer">Documents</p></div>
+                    </div>
+                    <div class="separator"></div>
+                    <div class="start_menu_list" onclick="shutdown_or_restart()">
+                        <div class="start_menu_list_icon"><img src="./img/shutdown.png" alt="Shutdown"></div>
+                        <div class="start_menu_list_text"><p class="type_writer">Shutdown</p></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
 
     <main>
 
-        <div class="shutdown">
-            <img src="./img/apple_80x80.png" alt="Apple Logo">
-        </div>
-
-        <div class="start_menu windows_shadow">
-            <div class="start_menu_column bottom">
-                <p class="rotate">RacecarOS</p>
-            </div>
-            <div class="start_menu_tabs">
-                <div class="start_menu_list">
-                    <div class="start_menu_list_icon"><p class="type_writer"><img src="./img/shutdown.png" alt="Shutdown"></div>
-                    <div class="start_menu_list_text"><p class="type_writer">Home</p></div>
-                </div>
-                <div class="start_menu_list">
-                    <div class="start_menu_list_icon"><img src="./img/shutdown.png" alt="Shutdown"></div>
-                    <div class="start_menu_list_text"><p class="type_writer">Documents</p></div>
-                </div>
-                <div class="separator"></div>
-                <div class="start_menu_list">
-                    <div class="start_menu_list_icon"><img src="./img/shutdown.png" alt="Shutdown"></div>
-                    <div class="start_menu_list_text"><p class="type_writer">Shutdown</p></div>
-                </div>
+        <div class="shutdown_container">
+            <div class="shutdown">
+                <img src="./img/apple_80x80.png" alt="Apple Logo">
+                <div class="small progress"><div>Loading…</div></div>
             </div>
         </div>
 
@@ -135,17 +144,20 @@
             </div>
             <!-- <div class="readmore_header"></div> -->
             <article class="">
-                <h1 class="type_writer">Joe Category</h1>
-                <p class="type_writer">Joe Danger is a side-scrolling video game incorporating elements of racing and platform games, and is the first game developed by Hello Games. The player controls the eponymous daredevil and navigates time-limited courses, aiming to complete
+                <h1>Joe Category</h1>
+                <p>Joe Danger is a side-scrolling video game incorporating elements of racing and platform games, and is the first game developed by Hello Games. The player controls the eponymous daredevil and navigates time-limited courses, aiming to complete
                     enough objectives to continue to further rounds.</p>
             </article>
         </div>
         <!-- READ MORE -->
 
-        <h1 class="center">Most popular</h1>
-        <div style="background-color: #008081">
+        <h1 class="center">Payment plans</h1>
+        <div class="payment_plans">
 
             <!-- paymant plan start -->
+
+            <h3>Most Popular</h3>
+
             <div class="payment_plan windows_shadow" id="payment_plan_one">
                 <div class="windows_tab center_vertical">
                     <p class="type_writer">3840 x 2160</p>
@@ -237,28 +249,34 @@
                     <th>Premium</th>
                 </tr>
                 <tr>
-                    <td class="category">Width</td>
-                    <td>1280px</td>
-                    <td>Griffin</td>
-                    <td>$100</td>
+                    <td class="category">Width (PX)</td>
+                    <td>1280</td>
+                    <td>1920</td>
+                    <td>3840</td>
                 </tr>
                 <tr>
-                    <td class="category">Height</td>
-                    <td>720px</td>
-                    <td>Griffin</td>
-                    <td>$150</td>
+                    <td class="category">Height (PX)</td>
+                    <td>720</td>
+                    <td>1080</td>
+                    <td>2160</td>
                 </tr>
                 <tr>
                     <td class="category">Hz</td>
-                    <td>Joe Yanger</td>
-                    <td>Swanson</td>
-                    <td>Joe Danger</td>
+                    <td>60</td>
+                    <td>120</td>
+                    <td>144</td>
                 </tr>
                 <tr>
                     <td class="category">OLED</td>
                     <td><i class="material-icons red center">close</i></td>
                     <td><i class="material-icons green center">done</i></td>
                     <td><i class="material-icons green center">done</i></td>
+                </tr>
+                <tr>
+                    <td class="category">Respone Time</td>
+                    <td>5 ms</td>
+                    <td>5 ms</td>
+                    <td>1 ms</td>
                 </tr>
             </table>
         </div>

@@ -16,6 +16,7 @@ a {
 
 main {
     background-color: white;
+    padding-top: 29px;
 }
 
 
@@ -95,13 +96,6 @@ article h1 {
     display: inline-block;
 }
 
-.fixed {
-    position: fixed;
-    top: 0;
-    z-index: 1;
-    width: 100%;
-}
-
 .main_padding {
     padding-top: 29px;
 }
@@ -176,6 +170,18 @@ footer {
 
 /*---PAYMENT PLAN---*/
 
+.payment_plans {
+    background-color: #008081;
+    padding-top: 1px; 
+    padding-bottom: 20px; 
+    margin-top: 16px;
+}
+
+.payment_plans h3 {
+    color: white;
+    text-align: center;
+}
+
 .payment_plan {
     width: 200px;
     background-color: #c0c0c0;
@@ -206,6 +212,10 @@ footer {
     margin-bottom: 19px;
 }
 
+.shutdown_container {
+    display: none;
+}
+
 .shutdown {
     height: 100vh;
     width: 100%;
@@ -219,13 +229,85 @@ footer {
     background-color: #C3C0B9;
 }
 
+/*---SHUTDOWN ANIMATION---*/
+
+/**
+ * (C)Leanest CSS spinner ever
+ */
+
+@keyframes spin {
+	to { transform: rotate(1turn); }
+}
+
+.progress {
+	position: relative;
+	display: inline-block;
+	width: 5em;
+	height: 5em;
+	margin: 0 .5em;
+	font-size: 12px;
+	text-indent: 999em;
+	overflow: hidden;
+	animation: spin 1s infinite steps(8);
+}
+
+.small.progress {
+	font-size: 4px;
+    margin-top: 16px;
+}
+
+.progress:before,
+.progress:after,
+.progress > div:before,
+.progress > div:after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 2.25em; /* (container width - part width)/2  */
+	width: .5em;
+	height: 1.5em;
+	border-radius: .2em;
+	background: #eee;
+	box-shadow: 0 3.5em #eee; /* container height - part height */
+	transform-origin: 50% 2.5em; /* container height / 2 */
+}
+
+.progress:before {
+	background: #555;
+}
+
+.progress:after {
+	transform: rotate(-45deg);
+	background: #777;
+}
+
+.progress > div:before {
+	transform: rotate(-90deg);
+	background: #999;
+}
+
+.progress > div:after {
+	transform: rotate(-135deg);
+	background: #bbb;
+}
+
 /*---START MENU---*/
+.header_container {
+    width: 100%;
+}
+
+.start_menu_container {
+    display: none;
+}
+
 .start_menu {
     min-height: 50px;
     width: 159px;
     background-color: #bfb8bf;
     display: flex;
     flex-direction: row;
+    z-index: 200;
+    position: relative;
 }
 
 .start_menu_column {
@@ -356,6 +438,8 @@ filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
     align-items: center;
     justify-content: center;
     margin: auto;
+    margin-bottom: 30px;
+    margin-top: 30px;
 }
 
 .slide_img {
@@ -379,6 +463,11 @@ filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
     padding-right: 16px;*/
     width: calc(100% - 130px);
     text-align: center;
+}
+
+.table_container {
+    display: flex;
+    justify-content: center;
 }
 
 
@@ -435,16 +524,45 @@ th {
 
 td {
     height: 50px;
+    text-align: center;
 }
 
 th {
     height: 50px;
 }
 
-@media (min-width: 800px) {}
+@media (min-width: 768px) {
+    .header_container {
+        bottom: 0;
+        position: fixed;
+    }
+    header {
+        bottom: 0;
+        position: fixed;
+        width: 100%;
+    }
+    .compatible {
+        flex-direction: column;
+    }
+    .payment_plans {
+        display: flex;
+        flex-direction: row;
+    }
+}
 
 
 /*---JS---*/
+
+.fixed {
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+}
+
+.absolute {
+    position: absolute;
+}
 
 .delete {
     display: none;
