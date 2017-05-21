@@ -531,6 +531,7 @@ th {
     height: 50px;
 }
 
+/*---IPAD/PLATTA---*/
 @media (min-width: 768px) {
     .header_container {
         bottom: 0;
@@ -550,6 +551,30 @@ th {
     }
 }
 
+/*---DESKTOP---*/
+@media (min-width: 1000px) {
+    .parallax-container {
+        height: 100vh;
+    }
+    .hero_text {
+        height: 100vh;
+    }
+    .hero_text h1 {
+        font-size: 5em;
+    }
+    .hero_text h3 {
+        font-size: 2em;
+    }
+    article {
+        max-width: 60vw;
+        margin-left: 200px;
+        margin-bottom: 75px;
+    }
+    article h1 {
+        font-size: 4em;
+        text-align: left;
+    }
+}
 
 /*---JS---*/
 
