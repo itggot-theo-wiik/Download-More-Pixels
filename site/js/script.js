@@ -20,6 +20,24 @@ $(document).ready(function() {
     });
 });
 
+download_i = 0
+
+async function downloader() {
+    while (download_i < 1920) {
+        await sleep(1);
+        var div = document.createElement('div');
+        div.setAttribute('class', 'pixel');
+        document.getElementById("pixel_container").appendChild(div);
+        download_i += 1;
+
+        // var para = document.createElement("P");
+        // var t = document.createTextNode("This is a paragraph.");
+        // para.appendChild(t);
+        // document.getElementById("myDIV").appendChild(para);
+    }
+
+}
+
 window.onload = absolute;
 
 function absolute() {
