@@ -104,7 +104,6 @@ article h1 {
     margin-right: 8px;
 }
 
-
 /*---COMPATIBLE---*/
 
 .compatible {
@@ -713,10 +712,25 @@ th {
 
 @media (min-width: 1020px) {
     .parallax-container {
+        display: none;
+    }
+    .hero_text_container {
         height: 100vh;
+        width: 100%;
+        background-color: pink;
+        display:flex;
+        justify-content:center;
+        align-items:center;
     }
     .hero_text {
-        height: 100vh;
+        width: 600px;
+        height: 300px;
+        background-image: url(https://secure.static.tumblr.com/e8365f4ebde226681fede061c6c06e91/i4iacmq/fndnsa8kg/tumblr_static_tumblr_static_cvyskb8j43s4gosk4c848oc8w_640.png);
+        background-size: cover;
+        top: auto;
+        /*background-color: red;*/
+        background-color: cyan;
+        background-blend-mode: multiply;
     }
     .hero_text h1 {
         font-size: 5em;
