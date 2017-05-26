@@ -1,3 +1,7 @@
+* {
+    /*transition: 1s ease;*/
+}
+
 body, html, p, h3, h2, h1 {
     margin: 0;
     padding: 0;
@@ -42,6 +46,10 @@ main {
     align-items: center;
     top: 0;
     position: absolute;
+}
+
+.hero_text_container {
+    transition: 1s ease;
 }
 
 .hero h1, .hero h3, .hero_text h1 {
@@ -190,6 +198,15 @@ footer {
     margin-top: 20px;
     margin-bottom: 20px;
     font-family: "Courier New", Courier, monospace;
+    height: 240px;
+}
+
+.payment_plan_best {
+    display: none;
+}
+
+.payment_plan_header_big {
+    display: none;
 }
 
 .windows_tab {
@@ -472,6 +489,10 @@ footer {
     text-align: center;
 }
 
+.slide_text_ipad {
+    display: none;
+}
+
 .table_container {
     display: flex;
     flex-direction: column;
@@ -485,7 +506,6 @@ footer {
     display: none;
     margin-top: 200px;
     margin-bottom: 200px;
-    width: 100vw;
 }
 
 .bulletpoint {
@@ -495,8 +515,8 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-left: 32px;
-    margin-right: 32px;
+    /*margin-left: 32px;
+    margin-right: 32px;*/
 }
 
 .bulletpoint_text {
@@ -705,6 +725,44 @@ th {
         display: flex;
         flex-direction: row;
     }
+    .slide {
+        width: 600px;
+        margin: 0;
+        margin-left: 64px;
+    }
+    .slide_text_ipad {
+        display: block;
+        margin-left: 16px;
+    }
+    .slide_text_ipad h1 {
+        text-align: left;
+    }
+    .slide_text {
+        display: none;
+    }
+    .compatible {
+        margin-left: 64px;
+        width: auto;
+        align-items: flex-start;
+    }
+    article {
+        width: 78%;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+    .compatible_container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-top: 16px;
+        margin-bottom: 16px;
+    }
+    .compatible_container h2, .compatible_container h3 {
+        color: rgba( 0, 0, 0, 0.54);
+    }
+    .compatible_icon {
+        margin-right: 16px;
+    }
 }
 
 
@@ -725,13 +783,27 @@ th {
     .hero_text {
         width: 600px;
         height: 300px;
-        background-image: url(https://secure.static.tumblr.com/e8365f4ebde226681fede061c6c06e91/i4iacmq/fndnsa8kg/tumblr_static_tumblr_static_cvyskb8j43s4gosk4c848oc8w_640.png);
-        background-size: cover;
         top: auto;
         /*background-color: red;*/
         background-color: cyan;
         background-blend-mode: multiply;
     }
+
+    .wallpaper_1 {
+        background-image: url(https://secure.static.tumblr.com/e8365f4ebde226681fede061c6c06e91/i4iacmq/fndnsa8kg/tumblr_static_tumblr_static_cvyskb8j43s4gosk4c848oc8w_640.png);
+        background-size: cover;
+    }
+
+    .wallpaper_1 {
+        background-image: url(http://i21.servimg.com/u/f21/11/37/25/27/abelar10.jpg);
+        background-size: cover;
+    }
+
+    .wallpaper_1 {
+        background-image: url(https://i.warosu.org/data/lit/img/0065/86/1432524459879.png);
+        background-size: cover;
+    }
+
     .hero_text h1 {
         font-size: 5em;
     }
@@ -754,10 +826,53 @@ th {
         flex-direction: row;
         justify-content: center;
     }
+    .bulletpoint_container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 340px;
+        height: 307px;
+        margin-right: 10px;
+        margin-left: 10px;
+        padding-bottom: 59px;
+        background-color: red;
+    }
     #vr {
         display: none;
     }
     .slide {
+        display: none;
+    }
+    .payment_plans {
+        width: 800px;
+        margin: auto;
+        margin-bottom: 200px;
+        margin-top: 16px;
+        align-items: flex-end;
+        background-color: rgba( 0, 0, 0, 0)
+    }
+    .payment_plan_best {
+        height: 350px;
+        width: 260px;
+        display: block;
+    }
+    .payment_plan_first {
+        display: none;
+    }
+    .special_button {
+        background-color: #008081;
+        background-color: pink;
+    }
+    .special_button div {
+        border: dotted 1px white;
+    }
+    .special_button div p {
+        color: white;
+    }
+    .payment_plan_header_big {
+        display: block;
+    }
+     .payment_plan_header_small {
         display: none;
     }
     
@@ -787,4 +902,9 @@ th {
 
 .display {
     display: block;
+}
+
+.smaller_height {
+    height: 50vh;
+    transition: 1s ease;
 }

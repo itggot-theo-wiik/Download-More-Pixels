@@ -20,6 +20,38 @@ $(document).ready(function() {
     });
 });
 
+window.onload = random_wallpaper();
+
+function random_wallpaper() {
+    var random_number = Math.random();
+    console.log(random_number)
+    if (random_number < 0.33) {
+        console.log("Litet");
+    }
+    else if (0.33 < random_number && random_number < 0.66){
+        console.log("mellan");
+    }
+    else {
+        console.log("största!!");
+    }
+
+}
+
+
+// Minska start skärmen på download sidan
+$(document).ready(function() {
+    $(window).bind('scroll', function() {
+        if ($(window).scrollTop() > 2 && $(window).width() >= 1020) {
+                element = document.querySelector(".hero_text_container");
+                element.classList.add("smaller_height");
+        }
+        if ($(window).scrollTop() == 0) {
+            element = document.querySelector(".hero_text_container");
+                element.classList.remove("smaller_height");
+        }
+    });
+});
+
 download_i = 0
 
 async function downloader() {

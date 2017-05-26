@@ -94,10 +94,23 @@
             <p>Joe Danger is a side-scrolling video game incorporating elements of racing and platform games, and is the first game developed by Hello Games. The player controls the eponymous daredevil and navigates time-limited courses, aiming to complete
                 enough objectives to continue to further rounds.</p>
         </article>
+
         <div class="compatible">
-            <div class="compatible_icon apple"></div>
-            <div class="compatible_icon windows"></div>
-            <div class="compatible_icon linux"></div>
+            <div class="compatible_container">
+                <div class="compatible_icon apple"></div>
+                <h2>Minimize on wrong side OS -</h2>
+                <h3>Version 0.1 - 0.8</h3>
+            </div>
+            <div class="compatible_container">
+                <div class="compatible_icon windows"></div>
+                <h2>Clippys OS -</h2>
+                <h3>All versions</h3>
+            </div>
+            <div class="compatible_container">
+                <div class="compatible_icon linux"></div>
+                <h2>Funny penguin OS -</h2>
+                <h3>Version 0.01 - 01</h3>
+            </div>
         </div>
 
         <div class="parallax-container top-margin blueFilter parallax_small" id="vr">
@@ -116,13 +129,22 @@
         </article>
 
         <div class="bulletpoints">
-            <div class="bulletpoint">
-                <div class="hover_area details_hover"></div>
-                <div class="details windows_shadow"></div>
-                <div class="bulletpoint_text bulletpoint_text_details">
-                    <h1>More Details</h1>
-                <p>Joe Danger is a side-scrolling video game incorporating elements of racing and platform games, and is the first game developed by Hello Games. The player controls the eponymous daredevil and navigates time-limited courses, aiming to complete
-                enough objectives to continue to further rounds.</p>
+            
+            <div class="bulletpoint_container windows_shadow">
+                <div class="windows_tab center_vertical">
+                    <p class="type_writer">More Details</p>
+                    <div class="windows_button" id="one" onclick="deleter(this.id)">
+                        <p class="type_writer">-</p>
+                    </div>
+                </div>
+                <div class="bulletpoint">
+                    <div class="hover_area details_hover"></div>
+                    <div class="details"></div>
+                    <div class="bulletpoint_text bulletpoint_text_details">
+                        <h1>More Details</h1>
+                    <p>Joe Danger is a side-scrolling video game incorporating elements of racing and platform games, and is the first game developed by Hello Games. The player controls the eponymous daredevil and navigates time-limited courses, aiming to complete
+                    enough objectives to continue to further rounds.</p>
+                    </div>
                 </div>
 
             </div>
@@ -154,6 +176,11 @@
             <div class="slide_img">
                 <img src="./img/pc.png" alt="tree">
             </div>
+            <article class="slide_text_ipad">
+                <h1>More Details</h1>
+                <p>Joe Danger is a side-scrolling video game incorporating elements of racing and platform games, and is the first game developed by Hello Games. The player controls the eponymous daredevil and navigates time-limited courses, aiming to complete
+                enough objectives to continue to further rounds.</p>
+            </article>
         </div>
 
         <div class="slide" id="slide_middle">
@@ -163,6 +190,11 @@
             <article class="slide_text">
                 <h1>Environmentally friendly</h1>
                 <p>Click to read more</p>
+            </article>
+            <article class="slide_text_ipad">
+                <h1>More Details</h1>
+                <p>Joe Danger is a side-scrolling video game incorporating elements of racing and platform games, and is the first game developed by Hello Games. The player controls the eponymous daredevil and navigates time-limited courses, aiming to complete
+                enough objectives to continue to further rounds.</p>
             </article>
         </div>
 
@@ -174,6 +206,11 @@
             <div class="slide_img">
                 <img src="./img/folder.png" alt="tree">
             </div>
+            <article class="slide_text_ipad">
+                <h1>More Details</h1>
+                <p>Joe Danger is a side-scrolling video game incorporating elements of racing and platform games, and is the first game developed by Hello Games. The player controls the eponymous daredevil and navigates time-limited courses, aiming to complete
+                enough objectives to continue to further rounds.</p>
+            </article>
         </div>
 
         <!-- READ MORE -->
@@ -193,14 +230,19 @@
         </div>
         <!-- READ MORE -->
 
-        <h1 class="center">Payment plans</h1>
+        <h1 class="center payment_plan_header_small">Payment plans</h1>
+        
+        <div style="background-color:rgba(255, 192, 203, 0.3); padding-top: 30px">
+            <article class="payment_plan_header_big">
+                <h1>Payment Plans</h1>
+            </article>
         <div class="payment_plans">
 
             <!-- paymant plan start -->
 
-            <h3>Most Popular</h3>
+            <!--<h3>Most Popular</h3>-->
 
-            <div class="payment_plan windows_shadow" id="payment_plan_one">
+            <div class="payment_plan windows_shadow payment_plan_first" id="payment_plan_one">
                 <div class="windows_tab center_vertical">
                     <p class="type_writer">3840 x 2160</p>
                     <div class="windows_button windows_shadow" id="one" onclick="deleter(this.id)">
@@ -253,6 +295,33 @@
                 </div>
             </div>
             <!-- paymant plan end -->
+            <!--BEST PAYMENT PLAN! START-->
+            <div class="payment_plan payment_plan_best windows_shadow" id="payment_plan_one">
+                <div class="windows_tab center_vertical">
+                    <p class="type_writer">3840 x 2160</p>
+                    <div class="windows_button windows_shadow" id="one" onclick="deleter(this.id)">
+                        <p class="type_writer">-</p>
+                    </div>
+                </div>
+                <div class="payment_plan_list" id="payment_plan_text_one">
+                    <ul>
+                        <li>4K</li>
+                        <li>Great viewing angles</li>
+                        <li>144hz</li>
+                        <li>1 ms response time</li>
+                    </ul>
+
+                    <a href="index.html">
+                        <div class="windows_button special_button windows_shadow" id="marginizer">
+                            <div class="dotted_border center_vertical">
+                                <p class="type_writer">Download</p>
+                            </div>
+                        </div>
+                    </a>
+
+                </div>
+            </div>
+            <!--BEST PAYMENT PLAN! END-->
             <!-- paymant plan start -->
             <div class="payment_plan windows_shadow" id="payment_plan_three">
                 <div class="windows_tab center_vertical">
@@ -280,6 +349,7 @@
                 </div>
             </div>
             <!-- paymant plan end -->
+        </div>
         </div>
 
         <div class="table_container">
