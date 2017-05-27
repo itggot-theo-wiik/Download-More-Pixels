@@ -37,6 +37,47 @@ function random_wallpaper() {
 
 }
 
+// Skapa egen payment plan
+function select(clicked_id) {
+    console.log(clicked_id);
+    var current = document.querySelector("#" + clicked_id.toString());
+    console.log(current);
+    i_payment = 1;
+
+    if (clicked_id.includes("width")) {
+        while (i_payment <= 3) {
+            console.log(i_payment.toString());
+            var current_remove = document.querySelector("#" + "width_" + i_payment.toString());
+            current_remove.classList.remove("green_background");
+            i_payment += 1;
+        }
+    }
+    else if (clicked_id.includes("height")) {
+        while (i_payment <= 3) {
+            console.log(i_payment.toString());
+            var current_remove = document.querySelector("#" + "height_" + i_payment.toString());
+            current_remove.classList.remove("green_background");
+            i_payment += 1;
+        }
+    }
+    else if (clicked_id.includes("hz")) {
+        while (i_payment <= 3) {
+            console.log(i_payment.toString());
+            var current_remove = document.querySelector("#" + "height_" + i_payment.toString());
+            current_remove.classList.remove("green_background");
+            i_payment += 1;
+        }
+    }
+    else if (clicked_id.includes("oled")) {
+        while (i_payment <= 3) {
+            console.log(i_payment.toString());
+            var current_remove = document.querySelector("#" + "height_" + i_payment.toString());
+            current_remove.classList.remove("green_background");
+            i_payment += 1;
+        }
+    }
+    current.classList.add("green_background");
+}
 
 // Minska start skärmen på download sidan
 $(document).ready(function() {
