@@ -18,6 +18,15 @@
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script type="text/javascript" src="js/materialize.min.js"></script>
 
+    <div class="shutdown_container">
+        <div class="shutdown">
+            <img src="./img/apple_80x80.png" alt="Apple Logo">
+            <div class="small progress">
+                <div>Loading…</div>
+            </div>
+        </div>
+    </div>
+
     <div class="header_container">
         <header>
             <!-- <form action="index.html">
@@ -32,22 +41,26 @@
         <div class="start_menu_container">
             <div class="start_menu windows_shadow">
                 <div class="start_menu_column bottom">
-                    <p class="rotate">RacecarOS</p>
+                    <p class="rotate">WindOS</p>
                 </div>
                 <div class="start_menu_tabs">
-                    <div class="start_menu_list">
-                        <div class="start_menu_list_icon">
-                            <p class="type_writer"><img src="./img/shutdown.png" alt="Shutdown"></div>
-                        <div class="start_menu_list_text">
-                            <p class="type_writer">Home</p>
+                    <a href="index.html">
+                        <div class="start_menu_list">
+                            <div class="start_menu_list_icon">
+                                <p class="type_writer"><img src="./img/shutdown.png" alt="Shutdown"></div>
+                            <div class="start_menu_list_text">
+                                <p class="type_writer">Home</p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="start_menu_list">
-                        <div class="start_menu_list_icon"><img src="./img/shutdown.png" alt="Shutdown"></div>
-                        <div class="start_menu_list_text">
-                            <p class="type_writer">Documents</p>
+                    </a>
+                    <a href="download.html">
+                        <div class="start_menu_list">
+                            <div class="start_menu_list_icon"><img src="./img/shutdown.png" alt="Shutdown"></div>
+                            <div class="start_menu_list_text">
+                                <p class="type_writer">Documents</p>
+                            </div>
                         </div>
-                    </div>
+                    </a>
                     <div class="separator"></div>
                     <div class="start_menu_list" onclick="shutdown_or_restart()">
                         <div class="start_menu_list_icon"><img src="./img/shutdown.png" alt="Shutdown"></div>
@@ -61,15 +74,19 @@
 
     </div>
 
-    <div class="phone">
-        <div class="phone_top"></div>
-        <div class="pixel_container" id="pixel_container"></div>
-        <div class="phone_bottom"></div>
-    </div>
 
-    <div style="width: 50px; height: 50px; background-color:orange" onclick="downloader()">
-        <p>Start Download</p>
-    </div>
+    <main>
+        <div class="phone">
+            <div class="phone_top"></div>
+            <div class="pixel_container" id="pixel_container"></div>
+            <div class="phone_bottom"></div>
+        </div>
+
+        <div style="width: 50px; height: 50px; background-color:orange" onclick="downloader()">
+            <p>Start Download</p>
+        </div>
+
+    </main>
 
     <footer>
         <p>downloadmorepixels@gmail.com</p>

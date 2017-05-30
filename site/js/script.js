@@ -7,7 +7,7 @@ $(document).ready(function() {
         var headerHeight = $(window).height() - 29;
         var headerHeight = 200;
         var headerHeight = $('.parallax-container').height();
-        console.log(headerHeight)
+        // console.log(headerHeight)
         if ($(window).scrollTop() > headerHeight) {
             $('.header_container').addClass('fixed');
             $('.header_container').removeClass('absolute');
@@ -79,7 +79,10 @@ function select(clicked_id) {
     current.classList.add("green_background");
 }
 
-// Minska start skärmen på download sidan
+
+// window.onload = name();
+
+// Minska start skärmen på huvud sidan
 $(document).ready(function() {
     $(window).bind('scroll', function() {
         if ($(window).scrollTop() > 2 && $(window).width() >= 1020) {

@@ -532,8 +532,8 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /*margin-left: 32px;
-    margin-right: 32px;*/
+    margin-left: 16px;
+    margin-right: 16px;
 }
 
 .bulletpoint_text {
@@ -710,14 +710,35 @@ th {
 
 /*---PIXELS---*/
 
+.phone {
+    width: 260px;
+    height: 500px;
+    margin: auto;
+    background-color: red;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    border: 5px solid black;
+}
+
+.phone_top {
+    background-color: green;
+    height: 50px;
+    width: 100%;
+}
+
+.phone_bottom {
+    background-color: blue;
+    height: 50px;
+    width: 100%;
+}
+
 .pixel_container {
     /*display: flex;
     flex-direction: row;*/
-    min-height: 500px;
-    width: 80%;
-    border: 5px solid black;
-    border-radius: 20px;
-    padding: 5px;
+    height: 100%;
+    width: 100%;
+    /*padding: 5px;*/
 }
 
 .pixel {
@@ -863,11 +884,11 @@ th {
         background-image: url(https://secure.static.tumblr.com/e8365f4ebde226681fede061c6c06e91/i4iacmq/fndnsa8kg/tumblr_static_tumblr_static_cvyskb8j43s4gosk4c848oc8w_640.png);
         background-size: cover;
     }
-    .wallpaper_1 {
+    .wallpaper_2 {
         background-image: url(http://i21.servimg.com/u/f21/11/37/25/27/abelar10.jpg);
         background-size: cover;
     }
-    .wallpaper_1 {
+    .wallpaper_3 {
         background-image: url(https://i.warosu.org/data/lit/img/0065/86/1432524459879.png);
         background-size: cover;
     }
@@ -941,8 +962,9 @@ th {
         display: none;
     }
     .special_button {
-        background-color: #008081;
-        background-color: pink;
+        /*background-color: #008081;
+        background-color: pink;*/
+        background-color: #00007f;
     }
     .special_button div {
         border: dotted 1px white;
@@ -1004,6 +1026,7 @@ th {
 .smaller_height {
     height: 50vh;
     transition: 1s ease;
+    background-color: #008083;
 }
 
 .green_background {
