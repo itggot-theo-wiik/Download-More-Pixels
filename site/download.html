@@ -76,21 +76,34 @@
 
 
     <main>
-        <div class="phone">
-            <div class="phone_top"></div>
-            <div class="pixel_container" id="pixel_container"></div>
-            <div class="phone_bottom"></div>
+        <div class="download_container">
+            <div class="phone">
+                <div class="phone_top">
+                    <div class="phone_speaker"></div>
+                </div>
+                <div class="pixel_container" id="pixel_container">
+                    <div class="start_download_button" id="start_download_button" onclick="downloader();hide_me(this.id)">
+                        <i class="material-icons download_icon">file_download</i>
+                        <p class="type_writer">Start Downloading</p>
+                    </div>
+                </div>
+                <div class="phone_bottom">
+                    <div class="phone_button"></div>
+                </div>
+            </div>
         </div>
+        <div class="blue_screen_of_death">
+            <div class="blue_screen_of_death_header">
+                <p class="type_writer bold">WindOS</p>
+            </div>
 
-        <div style="width: 50px; height: 50px; background-color:orange" onclick="downloader()">
-            <p>Start Download</p>
+            <p class="type_writer blue_screen_text"><br>An error has occurred. To continue:<br><br>Press Enter to return to WindOS, or<br><br>Press CTRL+ALT+DEL
+                to restart your computer. If you do this, you will lose any unsaved information in all open applications.<br><br>Error:
+                0E : 016F : BFF9B3D4</p>
+            <p class="type_writer"><br>Press any key to continue _</p>
         </div>
 
     </main>
-
-    <footer>
-        <p>downloadmorepixels@gmail.com</p>
-    </footer>
 
 </body>
 

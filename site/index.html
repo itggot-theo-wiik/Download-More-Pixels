@@ -52,11 +52,11 @@
                             </div>
                         </div>
                     </a>
-                    <a href="download.html">
-                        <div class="start_menu_list">
+                    <a href="#">
+                        <div class="start_menu_list" onclick="download_page()">
                             <div class="start_menu_list_icon"><img src="./img/shutdown.png" alt="Shutdown"></div>
                             <div class="start_menu_list_text">
-                                <p class="type_writer">Documents</p>
+                                <p class="type_writer">Download</p>
                             </div>
                         </div>
                     </a>
@@ -135,6 +135,8 @@
             </div>
             <div class="showcase_img"><img src="./img/vr.jpg" alt="Parallax"></div>
         </div>
+
+        <div class="vr_pixels"></div>
 
         <article class="">
             <h1>Introducing VR pixels</h1>
@@ -271,10 +273,10 @@
                             <li>1 ms response time</li>
                         </ul>
 
-                        <a href="download.html">
+                        <a href="#">
                             <div class="windows_button windows_shadow" id="marginizer">
                                 <div class="dotted_border center_vertical">
-                                    <p class="type_writer">Download</p>
+                                    <p class="type_writer" onclick="download_page()">Download</p>
                                 </div>
                             </div>
                         </a>
@@ -298,10 +300,10 @@
                             <li>5 ms response time</li>
                         </ul>
 
-                        <a href="download.html">
+                        <a href="#">
                             <div class="windows_button windows_shadow" id="marginizer">
                                 <div class="dotted_border center_vertical">
-                                    <p class="type_writer">Download</p>
+                                    <p class="type_writer" onclick="download_page()">Download</p>
                                 </div>
                             </div>
                         </a>
@@ -325,10 +327,10 @@
                             <li>1 ms response time</li>
                         </ul>
 
-                        <a href="download.html">
+                        <a href="#">
                             <div class="windows_button special_button windows_shadow" id="marginizer">
                                 <div class="dotted_border center_vertical">
-                                    <p class="type_writer">Download</p>
+                                    <p class="type_writer" onclick="download_page()">Download</p>
                                 </div>
                             </div>
                         </a>
@@ -352,10 +354,10 @@
                             <li>5 ms response time</li>
                         </ul>
 
-                        <a href="download.html">
+                        <a href="#">
                             <div class="windows_button windows_shadow" id="marginizer">
                                 <div class="dotted_border center_vertical">
-                                    <p class="type_writer">Download</p>
+                                    <p class="type_writer" onclick="download_page()">Download</p>
                                 </div>
                             </div>
                         </a>
@@ -388,21 +390,27 @@
                 </tr>
                 <tr>
                     <td class="category">Hz</td>
-                    <td>60</td>
-                    <td>120</td>
-                    <td>144</td>
+                    <td id="hz_1" onclick="select(this.id)">60</td>
+                    <td id="hz_2" onclick="select(this.id)">120</td>
+                    <td id="hz_3" onclick="select(this.id)">144</td>
                 </tr>
                 <tr>
                     <td class="category">OLED</td>
-                    <td><i class="material-icons red center">close</i></td>
-                    <td><i class="material-icons green center">done</i></td>
-                    <td><i class="material-icons green center">done</i></td>
+                    <td id="oled_1" onclick="select(this.id)"><i class="material-icons red center">close</i></td>
+                    <td id="oled_2" onclick="select(this.id)"><i class="material-icons green center">done</i></td>
+                    <td id="oled_3" onclick="select(this.id)"><i class="material-icons green center">done</i></td>
                 </tr>
                 <tr>
                     <td class="category">Respone Time</td>
-                    <td>5 ms</td>
-                    <td>5 ms</td>
-                    <td>1 ms</td>
+                    <td id="response_1" onclick="select(this.id)">5 ms</td>
+                    <td id="response_2" onclick="select(this.id)">5 ms</td>
+                    <td id="response_3" onclick="select(this.id)">1 ms</td>
+                </tr>
+                <tr>
+                    <td class="category">Price</td>
+                    <td>50$</td>
+                    <td>99$</td>
+                    <td>189$</td>
                 </tr>
             </table>
             <div class="windows_button windows_shadow" id="marginizer">
@@ -413,6 +421,38 @@
         </div>
 
     </main>
+
+    <div class="download_container">
+        <div class="back" onclick="download_page()">
+            <i class="material-icons">keyboard_arrow_left</i>
+            <p>Back</p>
+        </div>
+        <div class="phone">
+            <div class="phone_top">
+                <div class="phone_speaker"></div>
+            </div>
+            <div class="pixel_container" id="pixel_container">
+                <div class="start_download_button" id="start_download_button" onclick="downloader();hide_me(this.id)">
+                    <i class="material-icons download_icon">file_download</i>
+                    <p class="type_writer">Start Downloading</p>
+                </div>
+            </div>
+            <div class="phone_bottom">
+                <div class="phone_button"></div>
+            </div>
+        </div>
+    </div>
+    <div class="blue_screen_of_death">
+        <div class="blue_screen_of_death_header">
+            <p class="type_writer bold">WindOS</p>
+        </div>
+
+        <p class="type_writer blue_screen_text"><br>An error has occurred. To continue:<br><br>Press Enter to return to WindOS, or<br><br>Press CTRL+ALT+DEL to restart
+            your computer. If you do this, you will lose any unsaved information in all open applications.<br><br>Error:
+            0E : 016F : BFF9B3D4</p>
+        <p class="type_writer"><br>Press any key to continue _</p>
+    </div>
+
 
     <footer>
         <p>downloadmorepixels@gmail.com</p>

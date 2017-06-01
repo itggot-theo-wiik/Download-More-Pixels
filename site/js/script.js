@@ -1,9 +1,9 @@
-$(document).ready(function() {
+$(document).ready(function () {
     $('.parallax').parallax();
 });
 
-$(document).ready(function() {
-    $(window).bind('scroll', function() {
+$(document).ready(function () {
+    $(window).bind('scroll', function () {
         var headerHeight = $(window).height() - 29;
         var headerHeight = 200;
         var headerHeight = $('.parallax-container').height();
@@ -27,11 +27,9 @@ function random_wallpaper() {
     console.log(random_number)
     if (random_number < 0.33) {
         console.log("Litet");
-    }
-    else if (0.33 < random_number && random_number < 0.66){
+    } else if (0.33 < random_number && random_number < 0.66) {
         console.log("mellan");
-    }
-    else {
+    } else {
         console.log("största!!");
     }
 
@@ -39,59 +37,57 @@ function random_wallpaper() {
 
 // Skapa egen payment plan
 function select(clicked_id) {
-    console.log(clicked_id);
     var current = document.querySelector("#" + clicked_id.toString());
-    console.log(current);
     i_payment = 1;
 
     if (clicked_id.includes("width")) {
         while (i_payment <= 3) {
             console.log(i_payment.toString());
-            var current_remove = document.querySelector("#" + "width_" + i_payment.toString());
-            current_remove.classList.remove("green_background");
+            table_highlighter("width_", i_payment);
             i_payment += 1;
         }
-    }
-    else if (clicked_id.includes("height")) {
+    } else if (clicked_id.includes("height")) {
         while (i_payment <= 3) {
             console.log(i_payment.toString());
-            var current_remove = document.querySelector("#" + "height_" + i_payment.toString());
-            current_remove.classList.remove("green_background");
+            table_highlighter("height_", i_payment);
             i_payment += 1;
         }
-    }
-    else if (clicked_id.includes("hz")) {
+    } else if (clicked_id.includes("hz")) {
         while (i_payment <= 3) {
-            console.log(i_payment.toString());
-            var current_remove = document.querySelector("#" + "height_" + i_payment.toString());
-            current_remove.classList.remove("green_background");
+            table_highlighter("hz_", i_payment);
             i_payment += 1;
         }
-    }
-    else if (clicked_id.includes("oled")) {
+    } else if (clicked_id.includes("oled")) {
         while (i_payment <= 3) {
-            console.log(i_payment.toString());
-            var current_remove = document.querySelector("#" + "height_" + i_payment.toString());
-            current_remove.classList.remove("green_background");
+            table_highlighter("oled_", i_payment);
+            i_payment += 1;
+        }
+    } else if (clicked_id.includes("response")) {
+        while (i_payment <= 3) {
+            table_highlighter("response_", i_payment);
             i_payment += 1;
         }
     }
     current.classList.add("green_background");
 }
 
+function table_highlighter(unit, i_payment) {
+    var current_remove = document.querySelector("#" + unit + i_payment.toString());
+    current_remove.classList.remove("green_background");
+}
 
 // window.onload = name();
 
 // Minska start skärmen på huvud sidan
-$(document).ready(function() {
-    $(window).bind('scroll', function() {
+$(document).ready(function () {
+    $(window).bind('scroll', function () {
         if ($(window).scrollTop() > 2 && $(window).width() >= 1020) {
-                element = document.querySelector(".hero_text_container");
-                element.classList.add("smaller_height");
+            element = document.querySelector(".hero_text_container");
+            element.classList.add("smaller_height");
         }
         if ($(window).scrollTop() == 0) {
             element = document.querySelector(".hero_text_container");
-                element.classList.remove("smaller_height");
+            element.classList.remove("smaller_height");
         }
     });
 });
@@ -99,7 +95,7 @@ $(document).ready(function() {
 download_i = 0
 
 async function downloader() {
-    while (download_i < 1920) {
+    while (download_i < 1000) {
         await sleep(1);
         var div = document.createElement('div');
         div.setAttribute('class', 'pixel');
@@ -112,6 +108,27 @@ async function downloader() {
         // document.getElementById("myDIV").appendChild(para);
     }
 
+    await sleep(1000)
+    blue_screen()
+
+}
+
+function download_page() {
+    element = document.querySelector(".download_container");
+    element.classList.toggle("display_center_flex");
+}
+
+async function blue_screen() {
+    element = document.querySelector(".blue_screen_of_death");
+    element.classList.add("display_center_flex");
+    await sleep(7666);
+    location.reload();
+}
+
+// 
+function hide_me(clicked_id) {
+    var element = document.querySelector("#" + clicked_id.toString());
+    element.classList.add("delete");
 }
 
 window.onload = absolute;
@@ -127,7 +144,7 @@ function nav() {
 }
 
 function sleep(ms) {
-  return new Promise(resolve => setTimeout(resolve, ms));
+    return new Promise(resolve => setTimeout(resolve, ms));
 }
 
 async function shutdown_or_restart() {
