@@ -462,13 +462,17 @@ footer {
 }
 
 .windows_button_img {
-    height: 22px;
+    /*height: 22px;
     width: 54px;
     background-image: url(../img/windows_button.jpg);
-    background-size: cover;
+    background-size: cover;*/
     margin-right: 6px;
 }
 
+.price {
+    background-color: #008081;
+    color: white;
+}
 
 /*---SLIDE---*/
 
@@ -645,7 +649,13 @@ footer {
     background-blend-mode: multiply;
 }
 
-
+.total {
+    margin-top: 16px;
+}
+.results {
+    font-size: 1.5em;
+    font-family: "Courier New", Courier, monospace;
+}
 /*---SLIDE---*/
 
 .readmore {
@@ -872,12 +882,12 @@ th {
         display: none;
     }
     .vr_pixels {
-        height: 180px;
-        width: 300px;
-        background-color: orange;
+        height: 200px;
+        width: 400px;
         margin-left: auto;
         margin-right: auto;
         margin-top: 64px;
+        background-image: url(../img/VR_PIXELS.png);
     }
     .header_container {
         top: inherit !important;
@@ -1157,4 +1167,72 @@ th {
 
 .green_background {
     background-color: #2DCC70;
+}
+
+/*SPRITESHEET*/
+
+.sprite {
+    background-image: url(../img/spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite-Windows_95_Logo {
+    width: 89px;
+    height: 80px;
+    background-position: -5px -5px;
+}
+
+.sprite-apple_80x80 {
+    width: 80px;
+    height: 80px;
+    background-position: -104px -5px;
+}
+
+.sprite-download {
+    width: 24px;
+    height: 24px;
+    background-position: -194px -5px;
+}
+
+.sprite-folder {
+    width: 80px;
+    height: 80px;
+    background-position: -5px -95px;
+}
+
+.sprite-home {
+    width: 24px;
+    height: 24px;
+    background-position: -194px -39px;
+}
+
+.sprite-official-tux-logo {
+    width: 69px;
+    height: 80px;
+    background-position: -95px -95px;
+}
+
+.sprite-pc {
+    width: 80px;
+    height: 80px;
+    background-position: -228px -5px;
+}
+
+.sprite-shutdown {
+    width: 24px;
+    height: 24px;
+    background-position: -174px -95px;
+}
+
+.sprite-tree {
+    width: 80px;
+    height: 80px;
+    background-position: -208px -95px;
+}
+
+.sprite-windows_button {
+    width: 54px;
+    height: 22px;
+    background-position: -5px -185px;
 }

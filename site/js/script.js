@@ -35,6 +35,12 @@ function random_wallpaper() {
 
 }
 
+width_price = 0;
+height_price = 0;
+hz_price = 0;
+oled_price = 0;
+response_price = 0;
+
 // Skapa egen payment plan
 function select(clicked_id) {
     var current = document.querySelector("#" + clicked_id.toString());
@@ -45,30 +51,55 @@ function select(clicked_id) {
             console.log(i_payment.toString());
             table_highlighter("width_", i_payment);
             i_payment += 1;
+            width_price = price_calc(clicked_id);
+            console.log(width_price);
         }
     } else if (clicked_id.includes("height")) {
         while (i_payment <= 3) {
             console.log(i_payment.toString());
             table_highlighter("height_", i_payment);
             i_payment += 1;
+            height_price = price_calc(clicked_id);
         }
     } else if (clicked_id.includes("hz")) {
         while (i_payment <= 3) {
             table_highlighter("hz_", i_payment);
             i_payment += 1;
+            hz_price = price_calc(clicked_id);
         }
     } else if (clicked_id.includes("oled")) {
         while (i_payment <= 3) {
             table_highlighter("oled_", i_payment);
             i_payment += 1;
+            oled_price = price_calc(clicked_id);
         }
     } else if (clicked_id.includes("response")) {
         while (i_payment <= 3) {
             table_highlighter("response_", i_payment);
             i_payment += 1;
+            response_price = price_calc(clicked_id);
         }
     }
     current.classList.add("green_background");
+
+    output = ((width_price + height_price + hz_price + oled_price + response_price).toString() + "$");
+
+    $('.results').html(output);
+
+    console.log(output)
+}
+
+function price_calc(category) {
+    if (category.includes("1")) {
+        console.log("Billigaste.");
+        return 30;
+    } else if (category.includes("2")) {
+        console.log("Mellan pris");
+        return 50;
+    } else if (category.includes("3")) {
+        console.log("Dyraste");
+        return 100;
+    }
 }
 
 function table_highlighter(unit, i_payment) {

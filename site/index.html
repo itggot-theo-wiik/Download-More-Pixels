@@ -32,7 +32,8 @@
     <div class="header_container">
         <header>
 
-            <div class="windows_button_img" onclick="nav()"></div>
+            <!--<div class="windows_button_img" onclick="nav()"></div>-->
+            <i class="sprite sprite-windows_button windows_button_img" onclick="nav()"></i>
             <p class="type_writer">Download more Pixels</p>
         </header>
 
@@ -46,7 +47,7 @@
                     <a href="index.html">
                         <div class="start_menu_list">
                             <div class="start_menu_list_icon">
-                                <p class="type_writer"><img src="./img/shutdown.png" alt="Shutdown"></div>
+                                <p class="type_writer"><i class="sprite sprite-home"></i></div>
                             <div class="start_menu_list_text">
                                 <p class="type_writer">Home</p>
                             </div>
@@ -54,7 +55,7 @@
                     </a>
                     <a href="#">
                         <div class="start_menu_list" onclick="download_page()">
-                            <div class="start_menu_list_icon"><img src="./img/shutdown.png" alt="Shutdown"></div>
+                            <div class="start_menu_list_icon"><i class="sprite sprite-download"></i></div>
                             <div class="start_menu_list_text">
                                 <p class="type_writer">Download</p>
                             </div>
@@ -62,7 +63,7 @@
                     </a>
                     <div class="separator"></div>
                     <div class="start_menu_list" onclick="shutdown_or_restart()">
-                        <div class="start_menu_list_icon"><img src="./img/shutdown.png" alt="Shutdown"></div>
+                        <div class="start_menu_list_icon"><i class="sprite sprite-shutdown"></i></div>
                         <div class="start_menu_list_text">
                             <p class="type_writer">Shutdown</p>
                         </div>
@@ -104,21 +105,24 @@
             <div class="compatible">
                 <h1>Compatible with:</h1>
                 <div class="compatible_container">
-                    <div class="compatible_icon apple"></div>
+                    <!--<div class="compatible_icon apple"></div>-->
+                    <i class="sprite sprite-apple_80x80 compatible_icon"></i>
                     <div class="compatible_text">
                         <h2>Minimize on wrong side OS</h2>
                         <h3>Version 0.1 - 0.8</h3>
                     </div>
                 </div>
                 <div class="compatible_container">
-                    <div class="compatible_icon windows"></div>
+                    <!--<div class="compatible_icon windows"></div>-->
+                    <i class="sprite sprite-Windows_95_Logo compatible_icon"></i>
                     <div class="compatible_text">
                         <h2>Clippys OS</h2>
                         <h3>All versions</h3>
                     </div>
                 </div>
                 <div class="compatible_container">
-                    <div class="compatible_icon linux"></div>
+                    <!--<div class="compatible_icon linux"></div>-->
+                    <i class="sprite sprite-official-tux-logo compatible_icon"></i>
                     <div class="compatible_text">
                         <h2>Funny penguin OS</h2>
                         <h3>Version 0.01 - 01</h3>
@@ -136,7 +140,7 @@
             <div class="showcase_img"><img src="./img/vr.jpg" alt="Parallax"></div>
         </div>
 
-        <div class="vr_pixels"></div>
+        <div class="vr_pixels windows_shadow"></div>
 
         <article class="">
             <h1>Introducing VR pixels</h1>
@@ -186,7 +190,8 @@
                 <p>Click to read more</p>
             </article>
             <div class="slide_img">
-                <img src="./img/pc.png" alt="tree">
+                <!--<img src="./img/pc.png" alt="tree">-->
+                <i class="sprite sprite-pc"></i>
             </div>
             <article class="slide_text_ipad">
                 <h1>More Details</h1>
@@ -198,7 +203,8 @@
 
         <div class="slide" id="slide_middle">
             <div class="slide_img">
-                <img src="./img/tree.png" alt="tree">
+                <i class="sprite sprite-tree"></i>
+                <!--<img src="./img/tree.png" alt="tree">-->
             </div>
             <article class="slide_text">
                 <h1>Environmentally friendly</h1>
@@ -218,7 +224,8 @@
                 <p>Click to read more</p>
             </article>
             <div class="slide_img">
-                <img src="./img/folder.png" alt="tree">
+                <!--<img src="./img/folder.png" alt="tree">-->
+                <i class="sprite sprite-folder"></i>
             </div>
             <article class="slide_text_ipad">
                 <h1>More Details</h1>
@@ -408,16 +415,22 @@
                 </tr>
                 <tr>
                     <td class="category">Price</td>
-                    <td>50$</td>
-                    <td>99$</td>
-                    <td>189$</td>
+                    <td class="price">150$</td>
+                    <td class="price">250$</td>
+                    <td class="price">500$</td>
                 </tr>
             </table>
+            <div class="total">
+                <h1>Total:</h1>
+                <div class="results"></div>
+            </div>
+
             <div class="windows_button windows_shadow" id="marginizer">
                 <div class="dotted_border center_vertical">
                     <p class="type_writer">Create Custom Payment Plan</p>
                 </div>
             </div>
+
         </div>
 
     </main>
