@@ -134,23 +134,6 @@ article h1 {
     width: 80px;
 }
 
-.apple {
-    background-image: url(../img/Apple-Logo-rainbow.png);
-    background-size: cover;
-}
-
-.windows {
-    background-image: url(../img/Windows_95_Logo.png);
-    background-size: cover;
-    width: 89px;
-}
-
-.linux {
-    background-image: url(../img/official-tux-logo.png);
-    background-size: cover;
-    width: 69px;
-}
-
 
 /*---WINDOWS BORDER OCH SKUGGA---*/
 
@@ -232,7 +215,7 @@ footer {
     color: black;
 }
 
-#marginizer {
+.marginizer {
     margin-top: 50px;
     margin-left: 12px;
     margin-right: 12px;
@@ -474,6 +457,7 @@ footer {
     color: white;
 }
 
+
 /*---SLIDE---*/
 
 .slide {
@@ -614,7 +598,7 @@ footer {
 }
 
 .details {
-    background-image: url(http://wallpapercave.com/wp/oQrxvWI.jpg);
+    background-image: url(../img/computer.jpg);
     background-size: cover;
     height: 340px;
     width: 340px;
@@ -626,7 +610,7 @@ footer {
 }
 
 .enviroment {
-    background-image: url(http://www.webuyics.com/gallery/data/media/17/scrap-motherboards-for-recycling.jpg);
+    background-image: url(../img/scrap.jpg);
     background-size: cover;
     height: 340px;
     width: 340px;
@@ -638,7 +622,7 @@ footer {
 }
 
 .open_source {
-    background-image: url(https://s-media-cache-ak0.pinimg.com/736x/d2/3e/45/d23e45546bad1c989736d5ab9d138954.jpg);
+    background-image: url(../img/steve_gates.jpg);
     background-size: cover;
     height: 340px;
     width: 340px;
@@ -652,10 +636,13 @@ footer {
 .total {
     margin-top: 16px;
 }
+
 .results {
     font-size: 1.5em;
     font-family: "Courier New", Courier, monospace;
 }
+
+
 /*---SLIDE---*/
 
 .readmore {
@@ -722,23 +709,43 @@ th {
 .back {
     color: white;
     color: rgba(255, 255, 255, 0.9);
-    top: 8px;
+    /*top: 8px;
     left: 8px;
-    position: fixed;
+    position: fixed;*/
+    width: auto;
+    height: auto;
     display: flex;
     flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 8px;
+    margin-left: 8px;
+}
+
+.phone_container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
 .download_container {
     height: 100vh;
-    width: 100%;
+    width: 0;
+    /*width: 0;*/
+    overflow-x: hidden;
     background-color: #008081;
     position: fixed;
     top: 0;
+    left: 0;
     z-index: 600;
-    display: none;
+    display: flex;
+    flex-direction: column;
+    transition: 0.2s ease;
+    -webkit-box-shadow: 7px 0px 16px 0px rgba(50, 50, 50, 0.62);
+    -moz-box-shadow: 7px 0px 16px 0px rgba(50, 50, 50, 0.62);
+    box-shadow: 7px 0px 16px 0px rgba(50, 50, 50, 0.62);
 }
 
 .blue_screen_of_death {
@@ -813,6 +820,10 @@ th {
     padding-bottom: 10px;
     width: 100%;
     border-radius: 0 0 15px 15px;
+}
+
+.phone_button i {
+    display: none;
 }
 
 .phone_button {
@@ -973,6 +984,25 @@ th {
         background-color: #008083;
         display: none;
     }
+    .phone_speaker {
+        height: 10px;
+        width: 10px;
+    }
+    .phone {
+        height: 600px;
+        width: 400px;
+    }
+    .start_download_button {
+        margin-top: 185px;
+    }
+    .total {
+        font-size: 2em;
+        text-align: center;
+    }
+}
+
+.transition {
+    transition: 1s ease;
 }
 
 
@@ -1001,16 +1031,14 @@ th {
         background-color: cyan;
         background-blend-mode: multiply;
     }
+    .cyan {
+        background-color: #27ae60;
+    }
+    .dark_blue {
+        background-color: #34495e;
+    }
     .wallpaper_1 {
-        background-image: url(https://secure.static.tumblr.com/e8365f4ebde226681fede061c6c06e91/i4iacmq/fndnsa8kg/tumblr_static_tumblr_static_cvyskb8j43s4gosk4c848oc8w_640.png);
-        background-size: cover;
-    }
-    .wallpaper_2 {
-        background-image: url(http://i21.servimg.com/u/f21/11/37/25/27/abelar10.jpg);
-        background-size: cover;
-    }
-    .wallpaper_3 {
-        background-image: url(https://i.warosu.org/data/lit/img/0065/86/1432524459879.png);
+        background-image: url(../img/miami.png);
         background-size: cover;
     }
     .hero_text h1 {
@@ -1113,6 +1141,41 @@ th {
         transition: 1s ease;
         background-color: #008083;
     }
+    .phone_speaker {
+        height: 0px;
+        width: 0px;
+    }
+    .phone {
+        height: 600px;
+        width: 980px;
+    }
+    .phone_top {
+        height: 15px;
+    }
+    .phone_button i {
+        display: block;
+    }
+    .start_download_button {
+        margin-top: 200px;
+    }
+    .phone_button {
+        height: auto;
+        width: auto;
+        background-color: #c0c0c0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .total {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    .results {
+        margin-top: 15px;
+        margin-left: 15px;
+    }
 }
 
 
@@ -1168,6 +1231,7 @@ th {
 .green_background {
     background-color: #2DCC70;
 }
+
 
 /*SPRITESHEET*/
 

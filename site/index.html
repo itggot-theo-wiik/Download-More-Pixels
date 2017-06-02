@@ -54,7 +54,7 @@
                         </div>
                     </a>
                     <a href="#">
-                        <div class="start_menu_list" onclick="download_page()">
+                        <div class="start_menu_list" onclick="openDownloadPage()">
                             <div class="start_menu_list_icon"><i class="sprite sprite-download"></i></div>
                             <div class="start_menu_list_text">
                                 <p class="type_writer">Download</p>
@@ -78,7 +78,7 @@
 
         <div class="shutdown_container">
             <div class="shutdown">
-                <img src="./img/apple_80x80.png" alt="Apple Logo">
+                <i class="sprite sprite-apple_80x80"></i>
                 <div class="small progress">
                     <div>Loading…</div>
                 </div>
@@ -137,7 +137,7 @@
                 <h1>VR</h1>
                 <h2>PIXELS</h2>
             </div>
-            <div class="showcase_img"><img src="./img/vr.jpg" alt="Parallax"></div>
+            <!--<div class="showcase_img"><img src="./img/vr.jpg" alt="Parallax"></div>-->
         </div>
 
         <div class="vr_pixels windows_shadow"></div>
@@ -184,7 +184,7 @@
             </div>
         </div>
 
-        <div class="slide" onclick="displayer(this.id)" id="one">
+        <div class="slide" onclick="displayer(this.id)" id="_one_details">
             <article class="slide_text">
                 <h1>More Details</h1>
                 <p>Click to read more</p>
@@ -201,7 +201,7 @@
             </article>
         </div>
 
-        <div class="slide" id="slide_middle">
+        <div class="slide" onclick="displayer(this.id)" id="_one_enviroment">
             <div class="slide_img">
                 <i class="sprite sprite-tree"></i>
                 <!--<img src="./img/tree.png" alt="tree">-->
@@ -218,7 +218,7 @@
             </article>
         </div>
 
-        <div class="slide">
+        <div class="slide" onclick="displayer(this.id)" id="_one_open">
             <article class="slide_text">
                 <h1>Open Source</h1>
                 <p>Click to read more</p>
@@ -236,16 +236,50 @@
         </div>
 
         <!-- READ MORE -->
-        <div class="readmore windows_shadow" id="readmore_one">
+        <div class="readmore windows_shadow" id="readmore_one_details">
             <div class="windows_tab center_vertical">
                 <p class="type_writer">Joe</p>
-                <div class="windows_button windows_shadow" id="one" onclick="hide(this.id)">
+                <div class="windows_button windows_shadow" id="one_details" onclick="hide(this.id)">
                     <p class="type_writer">X</p>
                 </div>
             </div>
             <!-- <div class="readmore_header"></div> -->
             <article class="">
                 <h1>Joe Category</h1>
+                <p>Joe Danger is a side-scrolling video game incorporating elements of racing and platform games, and is the
+                    first game developed by Hello Games. The player controls the eponymous daredevil and navigates time-limited
+                    courses, aiming to complete enough objectives to continue to further rounds.</p>
+            </article>
+        </div>
+        <!-- READ MORE -->
+        <!-- READ MORE -->
+        <div class="readmore windows_shadow" id="readmore_one_enviroment">
+            <div class="windows_tab center_vertical">
+                <p class="type_writer">Joe</p>
+                <div class="windows_button windows_shadow" id="one_enviroment" onclick="hide(this.id)">
+                    <p class="type_writer">X</p>
+                </div>
+            </div>
+            <!-- <div class="readmore_header"></div> -->
+            <article class="">
+                <h1>Nature Category</h1>
+                <p>Joe Danger is a side-scrolling video game incorporating elements of racing and platform games, and is the
+                    first game developed by Hello Games. The player controls the eponymous daredevil and navigates time-limited
+                    courses, aiming to complete enough objectives to continue to further rounds.</p>
+            </article>
+        </div>
+        <!-- READ MORE -->
+        <!-- READ MORE -->
+        <div class="readmore windows_shadow" id="readmore_one_open">
+            <div class="windows_tab center_vertical">
+                <p class="type_writer">Joe</p>
+                <div class="windows_button windows_shadow" id="one_open" onclick="hide(this.id)">
+                    <p class="type_writer">X</p>
+                </div>
+            </div>
+            <!-- <div class="readmore_header"></div> -->
+            <article class="">
+                <h1>Open Source Category</h1>
                 <p>Joe Danger is a side-scrolling video game incorporating elements of racing and platform games, and is the
                     first game developed by Hello Games. The player controls the eponymous daredevil and navigates time-limited
                     courses, aiming to complete enough objectives to continue to further rounds.</p>
@@ -281,9 +315,9 @@
                         </ul>
 
                         <a href="#">
-                            <div class="windows_button windows_shadow" id="marginizer">
+                            <div class="windows_button windows_shadow marginizer" onclick="openDownloadPage()">
                                 <div class="dotted_border center_vertical">
-                                    <p class="type_writer" onclick="download_page()">Download</p>
+                                    <p class="type_writer">Download</p>
                                 </div>
                             </div>
                         </a>
@@ -308,9 +342,9 @@
                         </ul>
 
                         <a href="#">
-                            <div class="windows_button windows_shadow" id="marginizer">
+                            <div class="windows_button windows_shadow marginizer" onclick="openDownloadPage()">
                                 <div class="dotted_border center_vertical">
-                                    <p class="type_writer" onclick="download_page()">Download</p>
+                                    <p class="type_writer">Download</p>
                                 </div>
                             </div>
                         </a>
@@ -319,14 +353,14 @@
                 </div>
                 <!-- paymant plan end -->
                 <!--BEST PAYMENT PLAN! START-->
-                <div class="payment_plan payment_plan_best windows_shadow" id="payment_plan_one">
+                <div class="payment_plan payment_plan_best windows_shadow">
                     <div class="windows_tab center_vertical">
                         <p class="type_writer">3840 x 2160</p>
-                        <div class="windows_button windows_shadow" id="one" onclick="deleter(this.id)">
+                        <div class="windows_button windows_shadow" onclick="warning()">
                             <p class="type_writer">-</p>
                         </div>
                     </div>
-                    <div class="payment_plan_list" id="payment_plan_text_one">
+                    <div class="payment_plan_list">
                         <ul>
                             <li>4K</li>
                             <li>Great viewing angles</li>
@@ -335,9 +369,9 @@
                         </ul>
 
                         <a href="#">
-                            <div class="windows_button special_button windows_shadow" id="marginizer">
+                            <div class="windows_button special_button windows_shadow marginizer" onclick="openDownloadPage()">
                                 <div class="dotted_border center_vertical">
-                                    <p class="type_writer" onclick="download_page()">Download</p>
+                                    <p class="type_writer">Download</p>
                                 </div>
                             </div>
                         </a>
@@ -362,9 +396,9 @@
                         </ul>
 
                         <a href="#">
-                            <div class="windows_button windows_shadow" id="marginizer">
+                            <div class="windows_button windows_shadow marginizer" onclick="openDownloadPage()">
                                 <div class="dotted_border center_vertical">
-                                    <p class="type_writer" onclick="download_page()">Download</p>
+                                    <p class="type_writer">Download</p>
                                 </div>
                             </div>
                         </a>
@@ -425,9 +459,9 @@
                 <div class="results"></div>
             </div>
 
-            <div class="windows_button windows_shadow" id="marginizer">
+            <div class="windows_button windows_shadow marginizer" onclick="openDownloadPage()">
                 <div class="dotted_border center_vertical">
-                    <p class="type_writer">Create Custom Payment Plan</p>
+                    <p class="type_writer">Start Download</p>
                 </div>
             </div>
 
@@ -435,23 +469,27 @@
 
     </main>
 
-    <div class="download_container">
-        <div class="back" onclick="download_page()">
+    <div class="download_container" id="download_container">
+        <div class="back" onclick="closeDownloadPage()">
             <i class="material-icons">keyboard_arrow_left</i>
             <p>Back</p>
         </div>
-        <div class="phone">
-            <div class="phone_top">
-                <div class="phone_speaker"></div>
-            </div>
-            <div class="pixel_container" id="pixel_container">
-                <div class="start_download_button" id="start_download_button" onclick="downloader();hide_me(this.id)">
-                    <i class="material-icons download_icon">file_download</i>
-                    <p class="type_writer">Start Downloading</p>
+        <div class="phone_container">
+            <div class="phone transition">
+                <div class="phone_top transition">
+                    <div class="phone_speaker transition"></div>
                 </div>
-            </div>
-            <div class="phone_bottom">
-                <div class="phone_button"></div>
+                <div class="pixel_container" id="pixel_container">
+                    <div class="start_download_button transition" id="start_download_button" onclick="downloader();hide_me(this.id)">
+                        <i class="material-icons download_icon">file_download</i>
+                        <p class="type_writer">Start Downloading</p>
+                    </div>
+                </div>
+                <div class="phone_bottom">
+                    <div class="phone_button">
+                        <i class="sprite sprite-apple_80x80 transition"></i>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

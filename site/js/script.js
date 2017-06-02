@@ -20,17 +20,22 @@ $(document).ready(function () {
     });
 });
 
-window.onload = random_wallpaper();
+window.onload = random_bg_color();
 
-function random_wallpaper() {
+async function random_bg_color() {
     var random_number = Math.random();
     console.log(random_number)
+    await sleep(1000);
+    element = document.querySelector(".hero_text_container");
     if (random_number < 0.33) {
         console.log("Litet");
+        element.classList.add("cyan");
     } else if (0.33 < random_number && random_number < 0.66) {
         console.log("mellan");
+        element.classList.add("dark_blue");
     } else {
         console.log("största!!");
+        console.log("its still pink")
     }
 
 }
@@ -156,7 +161,7 @@ async function blue_screen() {
     location.reload();
 }
 
-// 
+//
 function hide_me(clicked_id) {
     var element = document.querySelector("#" + clicked_id.toString());
     element.classList.add("delete");
@@ -199,7 +204,7 @@ function deleter(clicked_id) {
 
 function displayer(clicked_id) {
     console.log(clicked_id)
-    var current = document.querySelector("#" + "readmore_" + clicked_id.toString());
+    var current = document.querySelector("#" + "readmore" + clicked_id.toString());
     console.log(current)
     current.classList.add("display");
 }
@@ -209,4 +214,27 @@ function hide(clicked_id) {
     var current = document.querySelector("#" + "readmore_" + clicked_id.toString());
     console.log(current)
     current.classList.remove("display");
+}
+
+warning_integer = 0;
+
+function warning() {
+    if (warning_integer < 1) {
+        alert("Uhmm. You must have accidentally pressed me, you would not try to close me, the best payment plan! (Not because I'm the most expensive one... Not at all.)");
+    } else if (warning_integer == 1) {
+        alert("Stop trying to close me.");
+    } else if (warning_integer == 2) {
+        alert("Stop, if you do it once again, you will regret it.");
+    } else {
+        window.open('http://www.arrestling.com/index.htm', '_blank');
+    }
+    warning_integer += 1;
+}
+
+function openDownloadPage() {
+    document.getElementById("download_container").style.width = "100%";
+}
+
+function closeDownloadPage() {
+    document.getElementById("download_container").style.width = "0";
 }
